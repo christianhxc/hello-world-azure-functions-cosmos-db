@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "documentDB",
+      "name": "documents",
+      "databaseName": "sgvirtual",
+      "collectionName": "ToDo",
+      "connection": "sgvirtual102017_DOCUMENTDB",
+      "direction": "in",
+      "sqlQuery": "SELECT * FROM c"
+    }
+  ],
+  "disabled": false
+}
